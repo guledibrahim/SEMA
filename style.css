@@ -1,5 +1,5 @@
 body{
-background-image: url(images/mountain.jpg);
+background-image: url(https://pixabay.com/get/ef3cb10e28f01c3e955c4302e44d479efe76e7d511b1114992f1c5/mountain-690104.jpg);
 background-repeat: no-repeat;
 background-size: cover;
 }
@@ -27,7 +27,6 @@ padding: 25px 75px 25px 75px;
 background-color: white;
 border-radius: 15px;
 }
-
 .form-group label{
 font-weight: lighter;
 opacity: 0.5;
@@ -50,5 +49,5 @@ outline: 0;
 background: transparent;
 border-radius: 0;
 border-bottom: 1px solid grey;
-width: 250px;
+width: 100%;
 }
