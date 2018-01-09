@@ -18,7 +18,7 @@ echo <<<EOD
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="index.php">
+      <a class="navbar-brand" href="sema.php">
         <img src="http://market.designmodo.com/wp-content/uploads/2015/06/flat-ui-logo.png" width="40" height="33" class="d-inline-block align-top">
         SEMA
       </a>
@@ -29,7 +29,7 @@ echo <<<EOD
             <a class="nav-link" id="SemaPRO" href="#">SemaPRO</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.php"><button type="button" id="loginbtn" class="btn btn-success">Join SEMA</button></a>
+            <a class="nav-link" href="sema.php"><button type="button" id="loginbtn" class="btn btn-success">Join SEMA</button></a>
           </li>
         </ul>
       </div>

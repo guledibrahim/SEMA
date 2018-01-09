@@ -1,53 +1,64 @@
-body{
-background-image:url(background.jpg);
-background-repeat: no-repeat;
-background-size: cover;
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-#SemaPRO,#About{
-margin-top: 10px;
-font-size: smaller;
-font-weight: bold;
-margin-right: 10px;
+
+#SemaPRO, #About {
+    margin-top: 10px;
+    font-size: smaller;
+    font-weight: bold;
+    margin-right: 10px;
 }
+
 #loginbtn {
-border-radius: 100px;
-padding-right: 25px;
-padding-left: 25px;
-font-size: smaller;
-font-weight: bold;
-background-color: #3db271;
+    border-radius: 100px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: smaller;
+    font-weight: bold;
+    background-color: #3db271;
 }
-#appbtn{
-font-size: large;
-font-weight: bold;
-background-color: #3db271;
+
+#appbtn {
+    font-size: large;
+    font-weight: bold;
+    background-color: #3db271;
 }
-.form-group{
-padding: 25px 75px 25px 75px;
-background-color: white;
-border-radius: 15px;
+
+.form-group {
+    padding: 25px 75px 25px 75px;
+    background-color: white;
+    border-radius: 15px;
 }
-.form-group label{
-font-weight: lighter;
-opacity: 0.5;
-padding-top: 10px;
+
+.form-group label {
+    font-weight: lighter;
+    opacity: 0.5;
+    padding-top: 10px;
 }
-.form-group button{
-border-radius: 100px;
-padding-right: 25px;
-padding-left: 25px;
-font-size: medium;
-font-weight: bold;
-background-color: #3db271;
-width: 100%;
-padding: 10px;
-margin-top: 50px;
+
+.form-group button {
+    border-radius: 100px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: medium;
+    font-weight: bold;
+    background-color: #3db271;
+    width: 100%;
+    padding: 10px;
+    margin-top: 50px;
 }
-.form-group input{
-border: 0;
-outline: 0;
-background: transparent;
-border-radius: 0;
-border-bottom: 1px solid grey;
-width: 100%;
+
+.form-group input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-radius: 0;
+    border-bottom: 1px solid grey;
+    width: 100%;
+}
+
+.g-recaptcha{
+    overflow: hidden;
 }

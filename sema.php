@@ -1,7 +1,10 @@
-<?php session_start(); //start the session 
-$_SESSION['user']='adam';
-if($_SESSION['user']=='adam'){ //navigation menu depending if the user is logged in or not. 
-	echo <<<EOD
+<?php session_start(); //start the session
+include 'signup.php'; 
+
+//$_SESSION['user'] = 'adam';
+
+if ($_SESSION['user']!='') { //navigation menu depending if the user is logged in or not.
+    echo <<<EOD
 	<!DOCTYPE html>
 	<html>
 		<head>
@@ -11,6 +14,7 @@ if($_SESSION['user']=='adam'){ //navigation menu depending if the user is logged
 			<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+			<script src='https://www.google.com/recaptcha/api.js'></script>
 		</head>
 		<body>
 			<!--Navbar-->
@@ -19,7 +23,7 @@ if($_SESSION['user']=='adam'){ //navigation menu depending if the user is logged
 					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 					</button>
-					<a class="navbar-brand" href="index.php">
+					<a class="navbar-brand" href="sema.php">
 						<img src="http://market.designmodo.com/wp-content/uploads/2015/06/flat-ui-logo.png" width="40" height="33" class="d-inline-block align-top">
 						SEMA
 					</a>
@@ -45,15 +49,13 @@ if($_SESSION['user']=='adam'){ //navigation menu depending if the user is logged
 					</div>
 					<!--sign up-->
 					<div class="col-md-6">
-						<form style="margin-top:100px;" class="form-group">
-							<label style="margin-right: 5px;" class=" control-label">FULL NAME</label>
-							<input class="form-control" type="text">
+						<form style="margin-top:100px;" class="form-group" method="post" name="signup-form" >	
 							<label style="margin-right: 5px;" class=" control-label">USERNAME</label>
-							<input class="form-control text-white" type="text">
+							<input class="form-control text-white" type="text" name="username">
 							<label style="margin-right: 5px;" class=" control-label">EMAIL</label>
-							<input class="form-control text-white" type="email">
+							<input class="form-control text-white" type="email" name="email">
 							<label style="margin-right: 5px;" class=" control-label">PASSWORD</label>
-							<input class="form-control" type="password">
+							<input class="form-control" type="password" name="password"> 
 							<button style="margin-top: 10px; border-radius: 10px;" class="btn btn-success">Create an account</button>
 						</form>
 					</div>
@@ -62,7 +64,6 @@ if($_SESSION['user']=='adam'){ //navigation menu depending if the user is logged
 		</body>
 	</html>
 EOD;
-}else{
-	heade("location: sema_app.php");
+} else {
+    header("location: home.php");
 }
-?>
